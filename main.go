@@ -7,8 +7,21 @@ import (
 )
 
 func main() {
+<<<<<<< HEAD
 	fmt.Println("REAL ESTATE PROPERTY LISTING SYSTEM")
 
+=======
+
+	fmt.Println("REAL ESTATE PROPERTY LISTING SYSTEM")
+
+	err := realty.LoadDatabase()
+
+	if err != nil {
+		fmt.Println("Error loading database:", err)
+		return
+	}
+
+>>>>>>> fb0ea9507f04b00d38f8483fa6393cb81b50f39f
 	for {
 		fmt.Println("\nMENU:")
 		fmt.Println("1. List a new property")
